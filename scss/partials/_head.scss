@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+    box-sizing: border-box; //do szerokosci wchodzi padding i border (nie tzreba wyliczac)
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.blackout {
+    height: 100%; //nie trzreba podoawac left i right
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+   // z-index: -1;
+
+
+    
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; //zamiast z-indexów, powoduje ze content wychodzi nad wszutkie warstwy
+}
